@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Form = () => {
+const Form = ({addData}) => {
   const initialState = {
     name: "",
     surname: "",
@@ -13,16 +13,22 @@ const Form = () => {
     const {name , value } = e.target;
     setvalues({ ...values, [name]: value});
 
-  
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     console.log(values)
+
+    addData(values)
+
+    setvalues()
+
+    e.target.reset();
+
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} >
       <div className="mb-4">
         <label
           className="block text-white text-sm font-bold mb-2"
