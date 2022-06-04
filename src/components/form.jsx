@@ -85,7 +85,7 @@ const Form = ({addData}) => {
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           name="date"
           type="text"
-          placeholder="Fecha de nacimiento"
+          placeholder="Fecha de nacimiento (29/12/2014)"
           onChange={handleChange}
         />
       </div>

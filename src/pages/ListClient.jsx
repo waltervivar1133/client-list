@@ -17,9 +17,11 @@ const ListClient = () => {
   }, []);
 
   return (
+    <>
+     <h1 className="text-white text-2xl text-center ">Lista de clientes</h1>
     <div className="flex justify-center items-center py-10">
 
-      <h1>Lista de clientes</h1>
+     
       <ul className="bg-white rounded-lg border border-gray-200 w-96 text-gray-900">
         {
           users.map((user) => {
@@ -35,6 +37,7 @@ const ListClient = () => {
         )}
       </ul>
     </div>
+    </>
   );
 };
 
